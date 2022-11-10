@@ -4,12 +4,12 @@ m = np.zeros((9,9), dtype = int)
 
 i = 0
 j = 0
+
 f = open("sud1.txt", 'r')
 while True:
 
     i = 0
     while True:
-        
         char = f.read(1)
         try:
             m[j, i] = int(char)
@@ -70,7 +70,6 @@ while z>0:
         i = 0
         j = 0
 print(m)
-
 
 for i in range(0,9):
     for j in range(0,9):
